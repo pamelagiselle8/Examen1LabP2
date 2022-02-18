@@ -12,6 +12,12 @@ package examen1p2_pamelaramirez_12141141;
 public class Deidad extends Extraterrestre {
     boolean creyentes;
     String religion;
+
+    public Deidad(boolean creyentes, String religion, String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroe, fuerza, habMental, habFisica, tieneSquad);
+        this.creyentes = creyentes;
+        this.religion = religion;
+    }
     
     @Override
     public void chance() {

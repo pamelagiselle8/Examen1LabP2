@@ -12,6 +12,13 @@ package examen1p2_pamelaramirez_12141141;
 public class Radioactivo extends Persona {
     int edadAcc;
     String tipoAcc;
+    
+    public Radioactivo(int edadAcc, String tipoAcc, String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroe, fuerza, habMental, habFisica, tieneSquad);
+        this.edadAcc = edadAcc;
+        this.tipoAcc = tipoAcc;
+    }
+
 
     @Override
     public void chance() {

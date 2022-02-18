@@ -14,6 +14,10 @@ import java.util.ArrayList;
 public class Mutante extends Persona {
     ArrayList <String> factoresMutantes = new ArrayList();
 
+    public Mutante(String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroe, fuerza, habMental, habFisica, tieneSquad);
+    }
+
     @Override
     public void chance() {
         

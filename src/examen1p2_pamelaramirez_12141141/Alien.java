@@ -11,6 +11,13 @@ package examen1p2_pamelaramirez_12141141;
  */
 public class Alien extends Extraterrestre {
     String planeta;
+
+    public Alien(String planeta, String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroe, fuerza, habMental, habFisica, tieneSquad);
+        this.planeta = planeta;
+    }
+    
+    
     
     @Override
     public void chance() {

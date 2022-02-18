@@ -17,6 +17,14 @@ public class Escuadron {
     private boolean heroes;
     private ArrayList <Persona> miembros = new ArrayList();
 
+    public Escuadron(String nombre, String lugarBase, boolean heroes) {
+        this.nombre = nombre;
+        this.lugarBase = lugarBase;
+        this.heroes = heroes;
+    }
+    
+    
+
     public String getNombre() {
         return nombre;
     }

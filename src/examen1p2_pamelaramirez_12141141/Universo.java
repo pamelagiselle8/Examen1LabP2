@@ -15,6 +15,10 @@ public class Universo {
     private String nombre;
     private ArrayList <Escuadron> squads = new ArrayList();
 
+    public Universo(String nombre) {
+        this.nombre = nombre;
+    }
+    
     public String getNombre() {
         return nombre;
     }

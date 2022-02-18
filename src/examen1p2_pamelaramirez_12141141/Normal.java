@@ -11,6 +11,10 @@ package examen1p2_pamelaramirez_12141141;
  */
 public class Normal extends Persona {
 
+    public Normal(String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroe, fuerza, habMental, habFisica, tieneSquad);
+    }
+    
     @Override
     public void chance() {
         

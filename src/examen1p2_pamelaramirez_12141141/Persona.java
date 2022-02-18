@@ -10,11 +10,22 @@ package examen1p2_pamelaramirez_12141141;
  * @author pame
  */
 public abstract class Persona {
-    String nombre, poder, debilidad, heroeovillano;
+    String nombre, poder, debilidad;
     int fuerza, habMental, habFisica;
-    boolean tieneSquad;
+    boolean tieneSquad, heroe;
     
     public abstract void chance();
+
+    public Persona(String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
+        this.nombre = nombre;
+        this.poder = poder;
+        this.debilidad = debilidad;
+        this.heroe = heroe;
+        this.fuerza = fuerza;
+        this.habMental = habMental;
+        this.habFisica = habFisica;
+        this.tieneSquad = tieneSquad;
+    }
 
     public String getNombre() {
         return nombre;
@@ -40,12 +51,12 @@ public abstract class Persona {
         this.debilidad = debilidad;
     }
 
-    public String getHeroeovillano() {
-        return heroeovillano;
+    public boolean getHeroe() {
+        return heroe;
     }
 
-    public void setHeroeovillano(String heroeovillano) {
-        this.heroeovillano = heroeovillano;
+    public void setHeroe(boolean heroe) {
+        this.heroe = heroe;
     }
 
     public int getFuerza() {
@@ -82,7 +93,7 @@ public abstract class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", poder=" + poder + ", debilidad=" + debilidad + ", heroeovillano=" + heroeovillano + ", fuerza=" + fuerza + ", habMental=" + habMental + ", habFisica=" + habFisica + ", tieneSquad=" + tieneSquad + '}';
+        return "Persona{" + "nombre=" + nombre + ", poder=" + poder + ", debilidad=" + debilidad + ", heroeovillano=" + heroe + ", fuerza=" + fuerza + ", habMental=" + habMental + ", habFisica=" + habFisica + ", tieneSquad=" + tieneSquad + '}';
     }
     
     
