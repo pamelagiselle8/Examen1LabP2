@@ -181,13 +181,13 @@ public class Examen1P2_PamelaRamirez_12141141 {
         }
         int prob = 1 + r.nextInt(2);
         if (prob == 1) {
-            dueloFuerza(squad1.getLider(), squad2.getLider());
+            dueloFuerza(squad1, squad2);
         }
         else if (prob == 2) {
-            dueloHabFisica(squad1.getLider(), squad2.getLider());
+            dueloHabFisica(squad1, squad2);
         }
         else{
-            dueloHabMental(squad1.getLider(), squad2.getLider());
+            dueloHabMental(squad1, squad2);
         }
     }
     
