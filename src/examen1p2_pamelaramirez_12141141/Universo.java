@@ -37,6 +37,6 @@ public class Universo {
 
     @Override
     public String toString() {
-        return "Universo{" + "nombre=" + nombre + ", squads=" + squads + '}';
+        return "\nNombre: " + nombre + "\nSquads: " + squads + '}';
     }
 }

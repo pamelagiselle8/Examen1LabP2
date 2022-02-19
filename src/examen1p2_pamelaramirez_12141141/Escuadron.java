@@ -22,9 +22,10 @@ public class Escuadron {
         this.lugarBase = lugarBase;
         this.heroes = heroes;
     }
-    
-    
 
+    public Escuadron() {
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -49,13 +50,14 @@ public class Escuadron {
         this.lider = lider;
     }
 
-    public boolean isHeroes() {
+    public boolean getHeroes() {
         return heroes;
     }
 
     public void setHeroes(boolean heroes) {
         this.heroes = heroes;
     }
+    
 
     public ArrayList<Persona> getMiembros() {
         return miembros;
@@ -67,7 +69,7 @@ public class Escuadron {
 
     @Override
     public String toString() {
-        return "Escuadron{" + "nombre=" + nombre + ", lugarBase=" + lugarBase + ", lider=" + lider + ", heroes=" + heroes + ", miembros=" + miembros + '}';
+        return "\nNombre: " + nombre + "\nLugar Base: " + lugarBase;
     }
     
     

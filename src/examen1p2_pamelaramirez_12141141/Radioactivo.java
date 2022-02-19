@@ -21,8 +21,16 @@ public class Radioactivo extends Persona {
 
 
     @Override
-    public void chance() {
-        
+    public void chance(Persona p1, Persona p2, int atr) {
+        if (atr == 1) {
+            super.fuerza = super.fuerza * 4;
+        }
+        else if (atr == 2) {
+            super.habFisica = super.habFisica * 4;
+        }
+        else{
+            super.habMental = super.habMental * 4;
+        }
     }
 
     public int getEdadAcc() {

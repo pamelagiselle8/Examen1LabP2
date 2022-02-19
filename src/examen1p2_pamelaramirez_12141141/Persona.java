@@ -14,7 +14,7 @@ public abstract class Persona {
     int fuerza, habMental, habFisica;
     boolean tieneSquad, heroe;
     
-    public abstract void chance();
+    public abstract void chance(Persona p1, Persona p2, int atr);
 
     public Persona(String nombre, String poder, String debilidad, boolean heroe, int fuerza, int habMental, int habFisica, boolean tieneSquad) {
         this.nombre = nombre;

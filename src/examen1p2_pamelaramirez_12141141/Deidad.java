@@ -5,11 +5,14 @@
  */
 package examen1p2_pamelaramirez_12141141;
 
+import java.util.Random;
+
 /**
  *
  * @author pame
  */
 public class Deidad extends Extraterrestre {
+    Random r = new Random();
     boolean creyentes;
     String religion;
 
@@ -20,8 +23,27 @@ public class Deidad extends Extraterrestre {
     }
     
     @Override
-    public void chance() {
-        
+    public void chance(Persona p1, Persona p2, int atr) {
+        int prob = 1 + r.nextInt(2);
+        if (prob == 1) {
+            p1.habFisica += p1.habFisica * 2;
+        }
+        else if (prob == 2) {
+            p1.habMental += p1.habMental * 2;
+        }
+        else{
+            p1.fuerza += p1.fuerza * 2;
+        }
+        prob = 1 + r.nextInt(2);
+        if (prob == 1) {
+            p2.habFisica = p2.habFisica / 2;
+        }
+        else if (prob == 2) {
+            p2.habMental = p2.habMental / 2;
+        }
+        else{
+            p2.fuerza = p2.fuerza / 2;
+        }
     }
 
     public boolean isCreyentes() {
