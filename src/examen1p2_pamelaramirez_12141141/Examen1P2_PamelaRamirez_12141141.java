@@ -203,6 +203,15 @@ public class Examen1P2_PamelaRamirez_12141141 {
             System.out.println(p2.getNombre() + " gana con una fuerza de " + p2.getFuerza()
                     + ", y " + p1.getNombre() + " pierde con " + p1.getFuerza() + " de fuerza.");
         }
+        int menor = 0;
+        Persona debil;
+        for (Persona m : e1.getMiembros()) {
+            int suma = m.getFuerza() + m.getHabFisica() + m.getHabMental();
+            if (suma < menor) {
+                menor = suma;
+                debil = m;
+            }
+        }
         
     }
     
